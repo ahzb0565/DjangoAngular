@@ -42,5 +42,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
-python cache
+# python cache
 __pycache__
+
+# keep
+.gitkeep
+
