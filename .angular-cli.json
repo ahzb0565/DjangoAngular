@@ -6,10 +6,16 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "static/dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        {
+          "input": ".",
+          "glob": "*.html",
+          "output": "../../templates",
+          "allowOutsideOutDir": true
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -20,6 +26,9 @@
       "prefix": "app",
       "styles": [
         "styles.css"
+      ],
+      "excluded": [
+        "*.html"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
